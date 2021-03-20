@@ -1,13 +1,21 @@
 import java.util.*
 
 fun main() {
+    val cat = Cat("Tom", "Bengal", 3, 5, 6)
+    println("Cat's name is ${cat.name}, age ${cat.age}, satiety level = ${cat.satietyLevel}, water level = ${cat.waterLevel} ")
 
 }
 
-class Cat{
+class Cat(name: String, breed: String, age: Int, satietyLevel: Int, waterLevel: Int){
     val name = "Tom"
     val breed = "Bengal"
-    val age: Int = 3
+    val age = 3
+    var satietyLevel = 2
+    var waterLevel = 3
+    init {
+        this.satietyLevel = satietyLevel
+        this.waterLevel = waterLevel
+    }
 
 }
 class Food {

@@ -11,6 +11,9 @@ fun main() {
     val box = Box("parallelepiped", "paper", "50l")
     val student = Student("Asan", 21, "hungry")
     val companymember = CompanyMember("Elon", "spasex", "leader", "genius" )
+    val book = Book("Philosophy of JAVA", "Eckel Bruce", 2019)
+    val book2 = book.copy(name = "Programming Kotlin", year = 2020)
+    val book3 = book2.copy(name = "Effective java", year = 2001)
     println(cat.toString() + " " +"Hash code = ${cat.hashCode()}")
     println(food.toString() + " " +"Hash code = ${food.hashCode()}")
     println(paper.toString() + " " +"Hash code = ${paper.hashCode()}")
@@ -22,10 +25,19 @@ fun main() {
     println(student.toString() + " " +"Hash code = ${student.hashCode()}")
     println(companymember.toString() + " " +"Hash code = ${companymember.hashCode()}")
     println(cat.equals(food))
+    println(book)
+    println(book2)
+    println(book3)
+
 
 
 }
 
+data class  Book(
+    val name:String,
+    val author: String,
+    val year: Int
+)
 data class Cat(
     val name: String,
     val breed: String,

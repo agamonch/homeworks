@@ -11,6 +11,18 @@ fun main() {
     val box = Box("parallelepiped", "paper", "50l")
     val student = Student("Asan", 21, "hungry")
     val companymember = CompanyMember("Elon", "spasex", "leader", "genius" )
+    println(cat.toString() + " " +"Hash code = ${cat.hashCode()}")
+    println(food.toString() + " " +"Hash code = ${food.hashCode()}")
+    println(paper.toString() + " " +"Hash code = ${paper.hashCode()}")
+    println(boiler.toString() + " " +"Hash code = ${boiler.hashCode()}")
+    println(battery.toString() + " " +"Hash code = ${battery.hashCode()}")
+    println(liquid.toString() + " " +"Hash code = ${liquid.hashCode()}")
+    println(cup.toString() + " " +"Hash code = ${cup.hashCode()}")
+    println(box.toString() + " " +"Hash code = ${box.hashCode()}")
+    println(student.toString() + " " +"Hash code = ${student.hashCode()}")
+    println(companymember.toString() + " " +"Hash code = ${companymember.hashCode()}")
+    println(cat.equals(food))
+
 
 }
 
